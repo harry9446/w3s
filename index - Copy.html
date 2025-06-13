@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>codewithw3s – Frontend Developer | codewithw3s</title>
+    <link rel="stylesheet" href="bar.css">
+    <meta name="title" content="codewithw3s – Frontend Developer | codewithw3s" />
+    <meta name="description" content="codewithw3s (codewithw3s) is a frontend developer & creative designer. Explore responsive websites, live projects, and blog posts." />
+    <meta name="keywords" content="Frontend Developer, HTML, CSS, JavaScript, React, Portfolio, codewithw3s, Web Designer, Web Developer India" />
+    <meta name="author" content="codewithw3s" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://yourdomain.com/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/icon.png" />
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.com/" />
+    <meta property="og:title" content="codewithw3s – Frontend Developer | codewithw3s" />
+    <meta property="og:description" content="Explore modern web development projects and portfolio of codewithw3s, a passionate frontend developer." />
+    <meta property="og:image" content="https://yourdomain.com/preview.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://yourdomain.com/" />
+    <meta property="twitter:title" content="codewithw3s – Frontend Developer | codewithw3s" />
+    <meta property="twitter:description" content="Frontend developer portfolio featuring modern, responsive, and fast web applications." />
+    <meta property="twitter:image" content="https://yourdomain.com/preview.jpg" />
+
+    <!-- PWA and Theme -->
+    <meta name="theme-color" content="#4F46E5" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#18181b" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="codewithw3s" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+    <!-- Animation Libraries -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+    <!-- ✅ CLEANED NAVBAR (Dot Issue Removed) -->
+    <!-- Skip to main content -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Custom Cursor (Hidden) -->
+    <style>
+        .cursor {
+            display: none !important;
+        }
+    </style>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">codewithw3s</a>
+
+            <ul class="nav-links" id="navLinks" style="list-style: none;">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <!-- <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#timeline" class="nav-link">Timeline</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li> -->
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-background"></div>
+            <div class="particles-container" id="particles"></div>
+
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Hi, I'm SUMIT KUMAR</h1>
+                    <H1>and I'm a</H1>
+                    <!-- <h2 class="hero-subtitle">Frontend Developer & Creative Designer</h2> -->
+                    <p class="hero-subtitle">
+                        <span id="element"></span>
+                    </p>
+
+                    <p class="hero-description">
+                        I love building beautiful, responsive, and easy-to-use websites using the latest web
+                        technologies. I'm passionate about writing clean code, designing with purpose, and creating
+                        digital experiences that actually make a difference.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-eye"></i>
+                            View My Work
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i>
+                            Get In Touch
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-inner">
+                            <img src="123.png" alt="Hero Image"
+                                style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;" />
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section" id="about">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">About Me</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    Passionate about creating exceptional digital experiences
+                </p>
+
+                <div class="about-content">
+                    <div class="about-image" data-aos="fade-right">
+                        <div class="about-image-wrapper">
+                            <div class="about-image-inner">
+                                <img src="./3426526.jpg" alt="About Image"
+                                    style="width: 100%; height: 100%; object-fit: cover; border-radius: 1rem;" />
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-text" data-aos="fade-left" data-aos-delay="200">
+                        <p>
+                            I'm a Frontend Developer who’s passionate about building modern, engaging websites. I enjoy
+                            turning complex ideas into simple, beautiful, and user-friendly solutions. My focus is
+                            always on creating digital experiences that are not just visually appealing, but also
+                            functional, fast, and accessible to everyone.
+
+                        </p>
+
+
+
+
+                        <div class="skills-grid">
+                            <div class="skill-item" data-aos="zoom-in" data-aos-delay="300">
+                                <i class="fab fa-js-square"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item" data-aos="zoom-in" data-aos-delay="350">
+                                <i class="fab fa-react"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-item" data-aos="zoom-in" data-aos-delay="450">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item" data-aos="zoom-in" data-aos-delay="500">
+                                <i class="fab fa-node-js"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-item" data-aos="zoom-in" data-aos-delay="550">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- skill -->
+
+        <!-- Progress Sound -->
+<!-- <audio id="hover-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-select-click-1109.mp3" preload="auto"></audio>
+
+ Skills Container -->
+<!-- <div class="skill-container" id="skills-box" role="list"></div> -->
+
+<!-- SVG Gradient for Circular Progress -->
+<!-- <svg width="0" height="0">
+  <defs>
+    <linearGradient id="gradientStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00f260" />
+      <stop offset="50%" stop-color="#0575e6" />
+      <stop offset="100%" stop-color="#ff6a00" />
+    </linearGradient>
+  </defs>
+</svg>  -->
+
+
+        <!-- Live Projects Section -->
+        <section class="section" id="projects">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Live Projects</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    Interactive demos of my latest work
+                </p>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <iframe src="https://your-live-project-link.com" class="project-preview" title="My Live Project"
+                            loading="lazy">
+                        </iframe>
+                        <div class="project-info">
+                            <h3 class="project-title">My Live Project</h3>
+                            <p class="project-description">An interactive web project with engaging UI/UX elements and
+                                seamless user experience.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://your-live-project-link.com" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/your-username/my-live-project" class="project-link"
+                                    target="_blank">
+                                    <i class="fab fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <iframe src="https://codepen.io/trending" class="project-preview" title="Portfolio Website Demo"
+                            loading="lazy"></iframe>
+                        <div class="project-info">
+                            <h3 class="project-title">Portfolio Website</h3>
+                            <p class="project-description">A responsive portfolio website built with modern web
+                                technologies, featuring smooth animations and optimized performance.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">GSAP</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://your-portfolio-demo.com" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/your-username/portfolio" class="project-link"
+                                    target="_blank">
+                                    <i class="fab fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <iframe src="https://css-tricks.com" class="project-preview" title="E-commerce Platform Demo"
+                            loading="lazy"></iframe>
+                        <div class="project-info">
+                            <h3 class="project-title">E-commerce Platform</h3>
+                            <p class="project-description">A full-featured e-commerce platform with shopping cart,
+                                payment integration, and admin dashboard.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Stripe</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://your-ecommerce-demo.com" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/your-username/ecommerce-platform" class="project-link"
+                                    target="_blank">
+                                    <i class="fab fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="blog">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Latest Blog Posts</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    Thoughts on web development, design, and technology
+                </p>
+
+                <div class="blog-grid">
+                    <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="blog-date">December 15, 2024</div>
+                        <h3 class="blog-title">The Future of Web Development: Trends to Watch in 2024</h3>
+                        <p class="blog-excerpt">
+                            Exploring the emerging trends and technologies that will shape web development in the coming
+                            year...
+                        </p>
+                        <div class="blog-content">
+                            <p>
+                                As we approach 2024, the web development landscape continues to evolve at a rapid pace.
+                                From the rise of AI-powered development tools to the growing importance of web
+                                performance
+                                and sustainability, developers need to stay ahead of the curve.
+                            </p>
+                            <p>
+                                Key trends include the adoption of new CSS features like container queries,
+                                the growth of edge computing, and the increasing focus on accessibility and inclusive
+                                design.
+                                Progressive Web Apps (PWAs) are becoming more sophisticated, offering near-native
+                                experiences
+                                across all platforms.
+                            </p>
+                            <p>
+                                The integration of AI and machine learning into development workflows is also
+                                transforming
+                                how we approach problem-solving and code optimization. Tools like GitHub Copilot and
+                                ChatGPT are becoming essential parts of the modern developer's toolkit.
+                            </p>
+                        </div>
+                        <span class="blog-read-more">Read More</span>
+                    </article>
+
+                    <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="blog-date">November 28, 2024</div>
+                        <h3 class="blog-title">Building Accessible Web Applications: A Complete Guide</h3>
+                        <p class="blog-excerpt">
+                            Learn how to create web applications that are usable by everyone, including users with
+                            disabilities...
+                        </p>
+                        <div class="blog-content">
+                            <p>
+                                Web accessibility is not just a legal requirement—it's a moral imperative that ensures
+                                equal access to information and functionality for all users. Creating accessible web
+                                applications benefits everyone, not just users with disabilities.
+                            </p>
+                            <p>
+                                Key principles include providing proper semantic HTML, ensuring sufficient color
+                                contrast,
+                                implementing keyboard navigation, and using ARIA attributes appropriately. Screen reader
+                                compatibility and focus management are crucial aspects often overlooked by developers.
+                            </p>
+                            <p>
+                                Testing with real users and assistive technologies is essential for validating
+                                accessibility
+                                implementations. Tools like axe-core, WAVE, and manual testing with screen readers
+                                should
+                                be part of every development workflow.
+                            </p>
+                        </div>
+                        <span class="blog-read-more">Read More</span>
+                    </article>
+
+                    <article class="blog-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="blog-date">November 10, 2024</div>
+                        <h3 class="blog-title">Optimizing React Performance: Tips and Best Practices</h3>
+                        <p class="blog-excerpt">
+                            Discover proven techniques to improve your React application's performance and user
+                            experience...
+                        </p>
+                        <div class="blog-content">
+                            <p>
+                                React performance optimization is crucial for creating smooth, responsive user
+                                experiences.
+                                Understanding React's rendering behavior and implementing proper optimization techniques
+                                can significantly improve your application's performance.
+                            </p>
+                            <p>
+                                Key optimization strategies include using React.memo for component memoization,
+                                implementing proper key props for lists, leveraging useMemo and useCallback hooks,
+                                and code splitting with lazy loading for improved initial load times.
+                            </p>
+                            <p>
+                                Profiling tools like React DevTools Profiler help identify performance bottlenecks,
+                                while techniques like virtualization for large lists and optimizing bundle sizes
+                                with tree shaking ensure optimal runtime performance.
+                            </p>
+                        </div>
+                        <span class="blog-read-more">Read More</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Section -->
+        <!-- ✅ Combined Blog Buttons Section (Side by Side) -->
+        <section class="section" id="blog-actions">
+            <div class="container blog-buttons" data-aos="fade-up">
+                <a href="#blog" class="btn btn-primary">📚 Explore Blog Posts</a>
+                <a href="#blog" class="btn btn-primary">📝 Write a Blog Post</a>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- Timeline Section -->
+        <section class="section" id="timeline">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Experience & Education</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    My journey in web development and design
+                </p>
+
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2025 - Present</div>
+                            <h3 class="timeline-title">Senior Frontend Developer</h3>
+                            <div class="timeline-company">TechCorp Solutions</div>
+                            <p class="timeline-description">
+                                Leading frontend development initiatives, mentoring junior developers,
+                                and architecting scalable web applications using React, TypeScript, and Node.js.
+                                Improved application performance by 40% through optimization techniques.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-left" data-aos-delay="300">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2025 - 2025</div>
+                            <h3 class="timeline-title">Frontend Developer</h3>
+                            <div class="timeline-company">Digital Innovations Inc.</div>
+                            <p class="timeline-description">
+                                Developed responsive web applications for various clients, implemented modern
+                                UI/UX designs, and collaborated with backend teams to integrate APIs.
+                                Successfully delivered 15+ projects on time and within budget.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="400">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024 - 2025</div>
+                            <h3 class="timeline-title">Junior Web Developer</h3>
+                            <div class="timeline-company">StartupHub Technologies</div>
+                            <p class="timeline-description">
+                                Gained hands-on experience in web development, learned modern frameworks,
+                                and contributed to multiple startup projects. Focused on creating
+                                user-friendly interfaces and optimizing website performance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-left" data-aos-delay="500">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2023 - 2025</div>
+                            <h3 class="timeline-title">Bachelor of Computer Science</h3>
+                            <div class="timeline-company">University of Technology</div>
+                            <p class="timeline-description">
+                                Graduated with honors, specializing in web technologies and software engineering.
+                                Completed multiple projects in JavaScript, Python, and database management.
+                                Active member of the coding club and hackathon participant.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="600">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024</div>
+                            <h3 class="timeline-title">Web Development Bootcamp</h3>
+                            <div class="timeline-company">CodeCamp Academy</div>
+                            <p class="timeline-description">
+                                Intensive 12-week program focusing on full-stack web development.
+                                Learned modern frameworks, best practices, and industry standards.
+                                Built multiple real-world projects and collaborated with fellow developers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="section" id="testimonials">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">What Clients Say</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    Feedback from satisfied clients and colleagues
+                </p>
+
+                <div class="testimonials-container" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card active">
+                        <p class="testimonial-quote">
+                            "Working with codewithw3s was an absolute pleasure. Their attention to detail
+                            and ability to translate our vision into a beautiful, functional website exceeded
+                            our expectations. The project was delivered on time and the communication
+                            throughout was excellent."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">SM</div>
+                            <div class="testimonial-info">
+                                <h4>Sarah Mitchell</h4>
+                                <p>CEO, InnovateTech</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <p class="testimonial-quote">
+                            "The level of professionalism and technical expertise demonstrated by CODEWITHW3S
+                            is remarkable. They not only delivered a high-quality product but also provided
+                            valuable insights that improved our overall digital strategy. Highly recommended!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">MJ</div>
+                            <div class="testimonial-info">
+                                <h4>Michael Johnson</h4>
+                                <p>Product Manager, DigitalFlow</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <p class="testimonial-quote">
+                            "I've worked with many developers over the years, but CODEWITHW3S stands out
+                            for their creative problem-solving and commitment to excellence. The responsive
+                            design and performance optimizations they implemented made a significant impact
+                            on our user engagement."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">ER</div>
+                            <div class="testimonial-info">
+                                <h4>Emily Rodriguez</h4>
+                                <p>UX Director, CreativeStudio</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-nav">
+                        <button class="testimonial-dot active" data-testimonial="0"></button>
+                        <button class="testimonial-dot" data-testimonial="1"></button>
+                        <button class="testimonial-dot" data-testimonial="2"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REMOVE  -->
+
+        </div>
+        </section>
+        </div>
+
+        <!-- Certifications & Badges -->
+
+        <section class="section" id="certifications">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Certifications & Badges</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    Professional certifications and achievements
+                </p>
+
+                <div class="certifications-grid">
+                    <!-- LetsUpgrade - Full Stack Web Development -->
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="certification-icon">
+                            <img src="https://letsupgrade.in/favicon.ico" alt="LetsUpgrade Logo"
+                                style="width: 50px; height: 50px;" />
+                        </div>
+                        <h3 class="certification-title">Full Stack Web Development</h3>
+                        <p class="certification-issuer">LetsUpgrade</p>
+                        <p class="certification-date">Completed - 2024</p>
+                    </div>
+
+                    <!-- LetsUpgrade - Python & Data Science -->
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="150">
+                        <div class="certification-icon">
+                            <img src="https://letsupgrade.in/favicon.ico" alt="LetsUpgrade Logo"
+                                style="width: 50px; height: 50px;" />
+                        </div>
+                        <h3 class="certification-title">Python & Data Science</h3>
+                        <p class="certification-issuer">LetsUpgrade</p>
+                        <p class="certification-date">Ongoing - 2025</p>
+                    </div>
+
+                    <!-- LetsUpgrade - Power BI -->
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="certification-icon">
+                            <img src="https://letsupgrade.in/favicon.ico" alt="LetsUpgrade Logo"
+                                style="width: 50px; height: 50px;" />
+                        </div>
+                        <h3 class="certification-title">Power BI</h3>
+                        <p class="certification-issuer">LetsUpgrade</p>
+                        <p class="certification-date">Completed - 2024</p>
+                    </div>
+
+                    <!-- GeekforGeeks ML/AI Courses -->
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="250">
+                        <div class="certification-icon">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/GeeksforGeeks.svg/1024px-GeeksforGeeks.svg.png"
+                                alt="GeekforGeeks Logo" style="width: 50px; height: 50px;" />
+                        </div>
+                        <h3 class="certification-title">Machine Learning Basics</h3>
+                        <p class="certification-issuer">GeekforGeeks</p>
+                        <p class="certification-date">Completed - 2024</p>
+                    </div>
+
+
+
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="350">
+                        <div class="certification-icon">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/GeeksforGeeks.svg/1024px-GeeksforGeeks.svg.png"
+                                alt="GeekforGeeks Logo" style="width: 50px; height: 50px;" />
+                        </div>
+                        <h3 class="certification-title">Artificial Intelligence Basics</h3>
+                        <p class="certification-issuer">GeekforGeeks</p>
+                        <p class="certification-date">Completed - 2024</p>
+                    </div>
+
+                    <!-- New GFG Course Added -->
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="certification-icon">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/GeeksforGeeks.svg/1024px-GeeksforGeeks.svg.png"
+                                alt="GeekforGeeks Logo" style="width: 50px; height: 50px;" />
+                        </div>
+                        <h3 class="certification-title">Data Science Essentials</h3>
+                        <p class="certification-issuer">GeekforGeeks</p>
+                        <p class="certification-date">Completed - 2024</p>
+                    </div>
+                </div>
+
+                <div class="certifications-grid">
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="450">
+                        <div class="certification-icon">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <h3 class="certification-title">AWS Certified Developer</h3>
+                        <p class="certification-issuer">Amazon Web Services</p>
+                        <p class="certification-date">Valid until Dec 2024</p>
+                    </div>
+
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="600">
+                        <div class="certification-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h3 class="certification-title">React Developer Certification</h3>
+                        <p class="certification-issuer">Meta (Facebook)</p>
+                        <p class="certification-date">Earned Nov 2024</p>
+                    </div>
+
+                    <div class="certification-card" data-aos="zoom-in" data-aos-delay="800">
+                        <div class="certification-icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <h3 class="certification-title">JavaScript Algorithms & Data Structures</h3>
+                        <p class="certification-issuer">freeCodeCamp</p>
+                        <p class="certification-date">Earned Sep 2024</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    Let's discuss your next project
+                </p>
+
+                <div class="contact-content" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-info">
+                        <div class="contact-item" data-aos="fade-up" data-aos-delay="300">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>codewithw3s@gmail.com</p>
+                                <a href="mailto:codewithw3s@gmail.com" class="contact-link">Send Email</a>
+                            </div>
+
+                        </div>
+                        <div class="contact-item" data-aos="fade-up" data-aos-delay="400">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 7324969404</p>
+                                <a href="tel:+91 7324969404" class="contact-link">Call Now</a>
+                            </div>
+                        </div>
+                        <div class="contact-item" data-aos="fade-up" data-aos-delay="500">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Uttam Nagar, New Delhi (India)</p>
+                                <a href="https://www.google.com/maps/place/Sitapuri+Part+2,+Sitapuri,+Delhi,+110045/@28.5984779,77.0690274,14z/data=!4m16!1m9!3m8!1s0x390d04cab348b001:0xe7fb79e6f4eee8a6!2sSitapuri+Part+2,+Sitapuri,+Delhi,+110045!3b1!8m2!3d28.6114318!4d77.0780316!10e5!16s%2Fg%2F12hqhwps9!3m5!1s0x390d04cab348b001:0xe7fb79e6f4eee8a6!8m2!3d28.6114318!4d77.0780316!16s%2Fg%2F12hqhwps9?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D"
+                                    target="_blank" class="contact-link">View on Map</a>
+                            </div>
+                        </div>
+                        <div class="contact-item" data-aos="fade-up" data-aos-delay="600">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>+91 7324969404</p>
+                                <a href="https://wa.me/917324969404" target="_blank" class="contact-link">Chat on
+                                    WhatsApp</a>
+                                    <img src="3d.jpg" alt="" srcset="" height="200px" width="200px" style="border-radius: 50%; margin-top: 52px;">
+                            </div>
+                            <p></p>
+                        </div>
+                        
+                    <!-- Social Media Section -->
+                    <div class="contact-social" data-aos="fade-up" data-aos-delay="1200">
+                        <h3>Follow Me</h3>
+                        <div class="social-grid">
+                            <a href="https://github.com/codewithw3s" target="_blank" class="social-card"
+                                aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://twitter.com/codewithw3s" target="_blank" class="social-card"
+                                aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="https://instagram.com/codewithw3s" target="_blank" class="social-card"
+                                aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://youtube.com/codewithw3s" target="_blank" class="social-card"
+                                aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                            <a href="https://codepen.io/codewithw3s" target="_blank" class="social-card"
+                                aria-label="CodePen">
+                                <i class="fab fa-codepen"></i>
+                                <span>CodePen</span>
+                            </a>
+                            <a href="https://dribbble.com/codewithw3s" target="_blank" class="social-card"
+                                aria-label="Dribbble">
+                                <i class="fab fa-dribbble"></i>
+                                <span>Dribbble</span>
+                            </a>
+
+                           
+                        </div>
+                         
+                    </div>
+                    <img src="3d-cartoon-portrait-person-practicing-law-profession.jpg" alt="" srcset="" height="510px" width="361px" style="border-radius: 7%; margin-top: 12px; margin-left: 10px;">
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wave"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">CODEWITHW3S</div>
+                    <p class="footer-description">
+                        Passionate frontend developer creating beautiful, responsive,
+                        and user-friendly web experiences with modern technologies.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" style="--i: 0" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" style="--i: 1" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" style="--i: 2" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" style="--i: 3" aria-label="CodePen">
+                            <i class="fab fa-codepen"></i>
+                        </a>
+                        <a href="#" class="social-link" style="--i: 4" aria-label="Dribbble">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#blog">Blog</a>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <a href="#">Web Development</a>
+                    <a href="#">UI/UX Design</a>
+                    <a href="#">Consulting</a>
+                    <a href="#">Maintenance</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 CODEWITHW3S. All rights reserved. Built with ❤️ and lots of ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- javascript fresh code here  -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Cursor movement effect
+            const cursor = document.getElementById("cursor");
+            document.addEventListener("mousemove", (e) => {
+                cursor.style.left = `${e.clientX}px`;
+                cursor.style.top = `${e.clientY}px`;
+            });
+
+            // Loading screen fade-out
+            const loadingScreen = document.getElementById("loadingScreen");
+            window.addEventListener("load", () => {
+                loadingScreen.classList.add("fade-out");
+            });
+
+            // Mobile menu toggle
+            const mobileToggle = document.getElementById("mobileMenuToggle");
+            const navLinks = document.getElementById("navLinks");
+            mobileToggle.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+            });
+
+            // Theme toggle
+            const themeToggle = document.getElementById("themeToggle");
+            themeToggle.addEventListener("click", () => {
+                document.documentElement.toggleAttribute("data-theme");
+            });
+
+            // Blog read more expand/collapse
+            document.querySelectorAll(".blog-read-more").forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    const content = btn.previousElementSibling;
+                    content.classList.toggle("expanded");
+                    btn.textContent = content.classList.contains("expanded")
+                        ? "Show Less"
+                        : "Read More";
+                });
+            });
+
+            // Testimonials switch
+            const dots = document.querySelectorAll(".testimonial-dot");
+            const cards = document.querySelectorAll(".testimonial-card");
+            dots.forEach((dot, i) => {
+                dot.addEventListener("click", () => {
+                    dots.forEach(d => d.classList.remove("active"));
+                    cards.forEach(c => c.classList.remove("active"));
+                    dot.classList.add("active");
+                    cards[i].classList.add("active");
+                });
+            });
+        });
+    </script>
+    </div>
+    <div id="cursor"></div>
+    <div id="loadingScreen"></div>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+    <!-- AOS Library for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    </script>
+
+
+    <!-- Typed.js Library -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Typed.js Initialization -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Frontend Developer</i>', 'Backend Developer', 'Creative Designer', 'JavaScript Enthusiast'],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: true
+        });
+    </script>
+    <script>
+    function bubbleSort(arr) {
+    let n = arr.length;
+    for (let i = 0; i < n - 1; i++) {
+        // Last i elements are already in place
+        for (let j = 0; j < n - 1 - i; j++) {
+            if (arr[j] > arr[j + 1]) {
+                // Swap arr[j] and arr[j + 1]
+                let temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    return arr;
+}
+</script>
+
+<!-- ✅ PARTICLES BACKGROUND -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS("particles", {
+  particles: {
+    number: { value: 40 },
+    color: { value: "#ffffff" },
+    shape: { type: "circle" },
+    opacity: { value: 0.5 },
+    size: { value: 3 },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#ffffff",
+      opacity: 0.4,
+      width: 1
+    },
+    move: { enable: true, speed: 2 }
+  },
+  interactivity: {
+    events: {
+      onhover: { enable: true, mode: "repulse" },
+      onclick: { enable: true, mode: "push" }
+    },
+    modes: {
+      repulse: { distance: 100 },
+      push: { particles_nb: 4 }
+    }
+  },
+  retina_detect: true
+});
+</script>
+
+
+
+
+<script>
+  const toggle = document.getElementById("mobileMenuToggle");
+  const navLinks = document.getElementById("navLinks");
+
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+</script>
+
+
+
+</body>
+
+</html>
